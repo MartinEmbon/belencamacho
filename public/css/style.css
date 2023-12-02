@@ -1,0 +1,562 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+:root{
+	/* --bg-primary:#0e1a60;
+	--color-primary:#0e1a60; */
+    --bg-primary: #d3c4a1; /* Updated to an earthy tone */
+    --color-primary: #8b735b; 
+}
+
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	margin: 0px;
+	padding: 0px;
+	font-size: 15px;
+}
+a, a:hover, a:focus{
+	text-decoration: none;
+}
+ul{
+	margin: 0px;
+	padding: 0px;
+}
+li{
+	list-style: none;
+}
+img{
+	max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight: 700;
+}
+h2{
+	font-size: 44px;
+	margin-bottom: 15px;
+}
+h3{
+	font-size: 24px;
+	line-height: 32px;
+	font-weight: 600;
+}
+section, .container{
+	position: relative;
+}
+.lead{
+font-weight: 500;
+}
+
+.logo-brand{
+    font-weight: 700;
+    user-select: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    
+}
+/*Header*/
+
+header {
+    background: var(--bg-primary);
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+header .navbar-expand-lg .navbar-nav .nav-link {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 24px;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: #FFF;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #FFF;
+}
+
+
+.logo-brand{
+    margin: 0px !important;
+}
+/*Hero Banner*/
+
+.hero-banner{
+	background: url("../images/camacho-main.jpg") no-repeat;
+	background-size: cover;
+    background-position: center -400px; /* Adjust the values as needed */
+	padding: 200px 0px;
+	min-height: 500px;
+	position: relative;
+}
+
+@media screen and (max-width: 750px) {
+    .hero-banner {
+    
+      background-position: center; /* Adjust as needed */
+    }
+  }
+
+
+
+.hero-banner:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    /* background: rgb(5 38 111 / 91%); */
+    background: rgba(211, 196, 161, 0.15);
+}
+.banner-text-wrap h1{
+	font-size:60px;
+	font-weight: 700;
+}
+
+.btn {
+    padding: 8px 24px;
+    border-radius: 0px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.btn-white {
+    /* background: #FFF; */
+    background: #d3c4a1; 
+    color: var(--color-primary);
+    border-radius: 5px;
+}
+.banner-text-wrap {
+    max-width: 70%;
+}
+
+.banner-text-wrap  p {
+    margin-bottom: 23px;
+    margin-top: 15px;
+}
+
+
+/*Features Section*/
+section.features-section {
+    margin-top: -90px;
+}
+/* .bg1 {
+    background: #10285f;
+}
+
+.bg2 {
+    background: #0c2f7d;
+}
+
+.bg3 {
+    background: #1148c3;
+} */
+
+.bg1 {
+    background: #8b735b; /* Adjusted to the new earthy tone */
+}
+
+.bg2 {
+    background: #7c654b; /* Adjusted tonality to maintain a difference */
+}
+
+.bg3 {
+    background: #947f6b; /* Adjusted tonality to maintain a difference */
+}
+
+.features-box h3, .features-box p {
+    /* color: #FFF; */
+    color: #d3c4a1; /* Updated to an earthy tone */
+    color: white;
+}
+
+.features-box {
+    padding: 40px;
+    
+}
+
+.features-box {
+    transition: transform 0.2s ease-in-out; /* Add a smooth transition effect */
+  }
+
+  .features-box:hover {
+    transform: scale(1.05); /* Increase the size on hover */
+  }
+
+/*About Section*/
+
+section.about-section {
+    padding: 100px 0px;
+}
+
+.btn-primary {
+    background-color: var(--bg-primary);
+    border-color: var(--bg-primary);
+}
+.about-media {
+    border: 10px solid var(--color-primary);
+}
+
+
+
+/*Services Section*/
+.servicios{
+    padding: 0px 5px;
+}
+.servicios li{
+    list-style-type: disc; /* o cambia 'disc' por 'circle', 'square', etc. según tu preferencia */
+    text-align: left;
+}
+
+.section-title {
+    margin-bottom: 60px;
+    
+
+}
+
+section.services-section {
+    padding: 100px 0px 50px;
+    /* background: #efefef; */
+    background: #d3c4a1; /* Updated to an earthy tone */
+color: #FFF;
+}
+
+.services-section h2{
+    color: #FFF !important;
+}
+
+.services-box {
+    /* background: #FFF; */
+    padding: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+    background: #8b735b; /* Updated to a deeper earthy tone */
+    height: 320px;
+    overflow: hidden; /* Hide overflow content */
+}
+
+
+@media screen and (max-width:950px){
+    .services-box{
+        height:max-content;
+    }
+}
+
+.services-box h3 {
+    margin: 15px 0px 20px;
+}
+
+
+
+/*reviews Section*/
+
+.reviews-section{
+	background:url("../images/fellow/camacho-fellow4.jpg") no-repeat;
+	background-size: cover;
+}
+.review-media {
+    width: 100%;
+}
+
+.review-media img {
+    width: 100px !important;
+    border-radius: 50% !important;
+    display: inline-block !important;
+    display: none !important;
+}
+.bg-overlay:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.6);
+}
+
+.reviews-section {
+    padding: 100px 0px;
+}
+
+.reviews-section h2 {
+    color: #FFF;
+    text-align: center;
+}
+
+.review-box {
+    color: #FFF;
+    text-align: center;
+    max-width: 700px;
+    margin: 0px auto;
+}
+
+.review-box p {
+    font-size: 18px;
+    margin: 26px 0px 26px;
+}
+
+.review-box  h4 {
+    text-transform: uppercase;
+}
+
+.review-box h5 {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+
+/*team Section*/
+
+section.team-section {
+    padding: 100px 0px;
+}
+
+.team-box {}
+
+.team-info {
+    text-align: center;
+}
+
+.team-info h3 {
+    margin-top: 26px;
+    margin-bottom: 0;
+}
+
+ul.team-social li {
+    display: inline-block;
+}
+
+ul.team-social li a {
+    width: 35px;
+    height: 35px;
+    border: 1px solid var(--color-primary);
+    display: inline-block;
+    text-align: center;
+    line-height: 35px;
+    color: var(--color-primary);
+}
+
+ .or-pic{
+    height: 100% !important;
+ }
+
+ .or-main{
+    height: 410px !important;
+    max-height: 410px !important;
+ }
+
+
+/*Booking Section*/
+
+
+.booking-section{
+		background:url("../images/or/camacho-or4.jpg") no-repeat;
+	background-size: cover;
+	padding: 100px 0px;
+    background-position: right;
+}
+.form-control {
+    border-radius: 0;
+    height: 60px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+textarea {
+    height: 224px !important;
+}
+
+.form-col h4 {
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.form-col h3 {
+    font-size: 36px;
+    color: #FFF;
+    margin: 7px 0px 50px;
+}
+
+
+/*Blog Section*/
+
+section.blog-section {
+    padding: 100px 0px;
+}
+
+.blog-info h3 a {
+    color: #000;
+}
+
+ul.meta li {
+    display: inline-block;
+}
+
+.blog-info p {
+    margin-top: 20px;
+}
+
+.blog-media {
+    margin-bottom: 17px;
+}
+
+.blog-box {
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.11);
+}
+
+
+/*Footer */
+
+footer {
+    /* background: var(--bg-primary); */
+    padding: 100px 0px;
+    /* color: #FFF; */
+
+    background: var(--bg-primary);
+    color: #000; 
+   
+}
+
+ul.footer-address li i {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    font-size: 22px;
+}
+
+ul.footer-address li {
+    position: relative;
+    padding-left: 35px;
+}
+
+ul.footer-address li a {
+    color: #FFF;
+    color:#212529;
+}
+
+.footer-widget h3 {
+    margin-bottom: 30px;
+}
+
+ul.footer-menu li a {
+    color: #FFF;
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+
+
+
+/*Responsive css*/
+
+
+
+
+
+@media (min-width:992px) and (max-width:1400px){
+    
+    header .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 10px 11px;
+    font-size: 14px;
+}
+
+}
+
+
+
+
+@media (max-width:991px){
+.navbar-toggler-icon {
+    background: #FFF;
+    padding: 20px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}	
+.reviews-section {
+    padding: 40px 0px;
+}
+
+.section-title {
+    font-size: 26px;
+    margin-bottom: 30px;
+   
+}
+
+.review-box p {
+    font-size: 15px;
+}
+
+.banner-text-wrap h1 {
+    font-size: 39px;
+}
+.team-box {
+    margin-bottom: 40px;
+}
+
+
+.hero-banner {
+    padding: 137px 0px;
+    min-height: auto;
+}
+
+.booking-section {
+    padding: 40px 0px;
+}
+
+footer {
+    padding: 40px 10px;
+}
+
+section.blog-section {
+    padding: 40px 0px;
+}
+
+section.team-section  {
+    padding: 30px 0px;
+}
+
+ 
+
+section.services-section {
+    padding: 30px 0px;
+    
+}
+
+.services-box {
+    margin-bottom: 20px;
+}
+
+
+.about-media {
+    margin-bottom: 30px;
+}
+
+.features-box {
+    margin-bottom: 30px;
+}
+
+section.about-section {
+    padding: 30px 0px 40px;
+}	
+	
+	
+	
+}
+
+
+
